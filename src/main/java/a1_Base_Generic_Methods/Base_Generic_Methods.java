@@ -17,6 +17,10 @@ public class Base_Generic_Methods {
 		}
 	}
 
+	public static void setScreenSize() {
+
+	}
+
 	public static void maximizeScreen() {
 		driver.manage().window().maximize();
 	}
