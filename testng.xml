@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Regression_Suite">
+	<test name="Test">
+		<classes>
+			<class name="Web_Testing.in.letcode.Input_Boxes" />
+		</classes>
+	</test> 
+</suite> 
