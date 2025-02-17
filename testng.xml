@@ -1,9 +1,13 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Regression_Suite">
-	<test name="Test">
+	<test name="ParallelTest">
 		<classes>
 			<class name="Web_Testing.in.letcode.Input_Boxes" />
+			<class name="Web_Testing.in.letcode.Input_Boxes2" />
 		</classes>
-	</test> 
-</suite> 
+	</test>
+</suite>
+
+
+<!--parallel="methods" thread-count="2">-->

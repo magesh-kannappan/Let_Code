@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import a1_Base_Generic_Methods.Base_Generic_Methods;
 
-public class Input_Boxes extends Base_Generic_Methods {
+public class Input_Boxes2 extends Base_Generic_Methods {
 
 	private String homepage_Url = "https://www.letcode.in/test";
 
@@ -19,22 +19,12 @@ public class Input_Boxes extends Base_Generic_Methods {
 
 	@BeforeTest
 	public void homePageLogin() {
-		openUrl(homepage_Url);
+		//		openUrl(homepage_Url);
 	}
 
 	@Test
 	public static void inputBoxes() {
-
-		redirectToUrl("https://letcode.in/edit");
-		pageTitleValidator("Interact with Input fields");
-
-	}
-
-	@Test
-	public static void method2() {
-
-		redirectToUrl("https:www.google.com");
-		System.out.println("Method 2");
+		openUrl("https://www.flipkart.com");
 
 	}
 
