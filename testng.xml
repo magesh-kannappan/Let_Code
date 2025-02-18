@@ -1,13 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Regression_Suite">
-	<test name="ParallelTest">
+	<test name="Browser Test" parallel="classes" thread-count="2">
+		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="Web_Testing.in.letcode.Input_Boxes" />
-			<class name="Web_Testing.in.letcode.Input_Boxes2" />
+			<class name="Web_Testing.in.letcode.ParallelExecution" />
+			<class name="Web_Testing.in.letcode.DataProviderTest" />
 		</classes>
 	</test>
 </suite>
 
 
 <!--parallel="methods" thread-count="2">-->
+
+<!--<class name="Web_Testing.in.letcode.Input_Boxes" />
+			<class name="Web_Testing.in.letcode.Input_Boxes2" />-->

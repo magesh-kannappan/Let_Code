@@ -1,43 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-17T12:40:54 IST" name="Regression_Suite" finished-at="2025-02-17T12:41:23 IST" duration-ms="29324">
+  <suite started-at="2025-02-18T16:02:12 IST" name="Regression_Suite" finished-at="2025-02-18T16:02:43 IST" duration-ms="30690">
     <groups>
     </groups>
-    <test started-at="2025-02-17T12:40:54 IST" name="ParallelTest" finished-at="2025-02-17T12:41:23 IST" duration-ms="29324">
-      <class name="Web_Testing.in.letcode.Input_Boxes2">
-        <test-method is-config="true" signature="browserLogin()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes2@2b71e916]" started-at="2025-02-17T12:40:44 IST" name="browserLogin" finished-at="2025-02-17T12:40:54 IST" duration-ms="9763" status="PASS">
+    <test started-at="2025-02-18T16:02:12 IST" name="Browser Test" finished-at="2025-02-18T16:02:43 IST" duration-ms="30690">
+      <class name="Web_Testing.in.letcode.ParallelExecution">
+        <test-method signature="browserLaunch(java.lang.String)[pri:0, instance:Web_Testing.in.letcode.ParallelExecution@2a3b5b47]" started-at="2025-02-18T16:02:13 IST" name="browserLaunch" finished-at="2025-02-18T16:02:35 IST" duration-ms="22391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserLogin -->
-        <test-method is-config="true" signature="homePageLogin()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes2@2b71e916]" started-at="2025-02-17T12:41:08 IST" name="homePageLogin" finished-at="2025-02-17T12:41:08 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- browserLaunch -->
+      </class> <!-- Web_Testing.in.letcode.ParallelExecution -->
+      <class name="Web_Testing.in.letcode.DataProviderTest">
+        <test-method signature="paraCheck(java.lang.String)[pri:0, instance:Web_Testing.in.letcode.DataProviderTest@3023df74]" started-at="2025-02-18T16:02:13 IST" name="paraCheck" finished-at="2025-02-18T16:02:43 IST" duration-ms="30529" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- homePageLogin -->
-        <test-method signature="inputBoxes()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes2@2b71e916]" started-at="2025-02-17T12:41:15 IST" name="inputBoxes" finished-at="2025-02-17T12:41:23 IST" duration-ms="7886" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inputBoxes -->
-      </class> <!-- Web_Testing.in.letcode.Input_Boxes2 -->
-      <class name="Web_Testing.in.letcode.Input_Boxes">
-        <test-method is-config="true" signature="browserLogin()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@30c15d8b]" started-at="2025-02-17T12:40:35 IST" name="browserLogin" finished-at="2025-02-17T12:40:44 IST" duration-ms="9651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserLogin -->
-        <test-method is-config="true" signature="homePageLogin()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@30c15d8b]" started-at="2025-02-17T12:40:54 IST" name="homePageLogin" finished-at="2025-02-17T12:41:08 IST" duration-ms="14384" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homePageLogin -->
-        <test-method signature="inputBoxes()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@30c15d8b]" started-at="2025-02-17T12:41:08 IST" name="inputBoxes" finished-at="2025-02-17T12:41:12 IST" duration-ms="3532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inputBoxes -->
-        <test-method signature="method2()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@30c15d8b]" started-at="2025-02-17T12:41:12 IST" name="method2" finished-at="2025-02-17T12:41:15 IST" duration-ms="3348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method2 -->
-      </class> <!-- Web_Testing.in.letcode.Input_Boxes -->
-    </test> <!-- ParallelTest -->
+        </test-method> <!-- paraCheck -->
+      </class> <!-- Web_Testing.in.letcode.DataProviderTest -->
+    </test> <!-- Browser Test -->
   </suite> <!-- Regression_Suite -->
 </testng-results>

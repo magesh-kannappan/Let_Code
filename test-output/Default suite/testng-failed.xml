@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Web_Testing.in.letcode.Input_Boxes">
+      <class name="Web_Testing.in.letcode.DataProviderTest">
         <methods>
-          <include name="browserLogin"/>
-          <include name="homePageLogin"/>
+          <include name="paraCheck"/>
         </methods>
-      </class> <!-- Web_Testing.in.letcode.Input_Boxes -->
+      </class> <!-- Web_Testing.in.letcode.DataProviderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
