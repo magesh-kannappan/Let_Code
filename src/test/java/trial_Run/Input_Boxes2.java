@@ -1,4 +1,4 @@
-package Web_Testing.in.letcode;
+package trial_Run;
 
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;

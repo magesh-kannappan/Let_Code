@@ -4,14 +4,7 @@
 	<test name="Browser Test" parallel="classes" thread-count="2">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="Web_Testing.in.letcode.ParallelExecution" />
-			<class name="Web_Testing.in.letcode.DataProviderTest" />
+			<class name="Web_Testing.in.letcode.Input_Boxes" />
 		</classes>
 	</test>
 </suite>
-
-
-<!--parallel="methods" thread-count="2">-->
-
-<!--<class name="Web_Testing.in.letcode.Input_Boxes" />
-			<class name="Web_Testing.in.letcode.Input_Boxes2" />-->

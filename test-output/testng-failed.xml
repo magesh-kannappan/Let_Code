@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Web_Testing.in.letcode.DataProviderTest">
+      <class name="trial_Run.WindowHandling">
         <methods>
-          <include name="paraCheck"/>
+          <include name="handle"/>
         </methods>
-      </class> <!-- Web_Testing.in.letcode.DataProviderTest -->
+      </class> <!-- trial_Run.WindowHandling -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
