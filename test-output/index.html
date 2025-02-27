@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\NMSLAP511\AppData\Local\Temp\testng-eclipse-1314455271\testng-customsuite.xml</span>
+                    <span>C:\Users\NMSLAP511\AppData\Local\Temp\testng-eclipse--1058268617\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -136,7 +136,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\NMSLAP511\AppData\Local\Temp\testng-eclipse-1314455271\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\NMSLAP511\AppData\Local\Temp\testng-eclipse--1058268617\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -145,7 +145,11 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;trial_Run.WindowHandling&quot;/&gt;
+      &lt;class name=&quot;trial_Run.WindowHandling&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;handle&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- trial_Run.WindowHandling --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -189,12 +193,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'handle')
 data.setCell(0, 2, 'trial_Run.WindowHandling')
-data.setCell(0, 3, 60122);
+data.setCell(0, 3, 202534);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
