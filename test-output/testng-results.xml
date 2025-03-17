@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-20T12:39:45 IST" name="Default suite" finished-at="2025-02-20T12:43:08 IST" duration-ms="202718">
+  <suite started-at="2025-03-17T14:52:26 IST" name="Default suite" finished-at="2025-03-17T14:53:00 IST" duration-ms="34635">
     <groups>
     </groups>
-    <test started-at="2025-02-20T12:39:45 IST" name="Default test" finished-at="2025-02-20T12:43:08 IST" duration-ms="202718">
-      <class name="trial_Run.WindowHandling">
-        <test-method signature="handle()[pri:0, instance:trial_Run.WindowHandling@223191a6]" started-at="2025-02-20T12:39:45 IST" name="handle" finished-at="2025-02-20T12:43:08 IST" duration-ms="202534" status="PASS">
+    <test started-at="2025-03-17T14:52:26 IST" name="Default test" finished-at="2025-03-17T14:53:00 IST" duration-ms="34635">
+      <class name="Web_Testing.in.letcode.Input_Boxes">
+        <test-method is-config="true" signature="propFileLoader()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@443118b0]" started-at="2025-03-17T14:52:26 IST" name="propFileLoader" finished-at="2025-03-17T14:52:26 IST" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- handle -->
-      </class> <!-- trial_Run.WindowHandling -->
+        </test-method> <!-- propFileLoader -->
+        <test-method signature="chromeLaunch()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@443118b0]" started-at="2025-03-17T14:52:26 IST" name="chromeLaunch" finished-at="2025-03-17T14:52:42 IST" duration-ms="16369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chromeLaunch -->
+        <test-method signature="inputBoxes()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@443118b0]" started-at="2025-03-17T14:52:42 IST" name="inputBoxes" finished-at="2025-03-17T14:52:42 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inputBoxes -->
+        <test-method signature="homePageLogin()[pri:0, instance:Web_Testing.in.letcode.Input_Boxes@443118b0]" started-at="2025-03-17T14:52:42 IST" name="homePageLogin" finished-at="2025-03-17T14:53:00 IST" depends-on-methods="Web_Testing.in.letcode.Input_Boxes.chromeLaunch" duration-ms="18077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageLogin -->
+      </class> <!-- Web_Testing.in.letcode.Input_Boxes -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

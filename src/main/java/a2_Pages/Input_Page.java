@@ -16,7 +16,6 @@ public class Input_Page {
 	}
 
 	private void asd() {
-		// TODO Auto-generated method stub
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(2));
 	}
 }

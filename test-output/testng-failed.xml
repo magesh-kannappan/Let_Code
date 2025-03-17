@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="trial_Run.WindowHandling">
+      <class name="Web_Testing.in.letcode.Input_Boxes">
         <methods>
-          <include name="handle"/>
+          <include name="propFileLoader"/>
+          <include name="homePageLogin"/>
+          <include name="chromeLaunch"/>
         </methods>
-      </class> <!-- trial_Run.WindowHandling -->
+      </class> <!-- Web_Testing.in.letcode.Input_Boxes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

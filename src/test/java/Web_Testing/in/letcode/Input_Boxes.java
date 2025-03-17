@@ -1,39 +1,42 @@
 package Web_Testing.in.letcode;
 
-import org.testng.annotations.Ignore;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import a1_Base_Generic_Methods.Base_Generic_Methods;
+import a1_Base_Generic_Methods.Base_Practice;
 
-public class Input_Boxes extends Base_Generic_Methods {
+public class Input_Boxes extends Base_Practice {
 
-	private String homepage_Url = "https://www.letcode.in/test";
+	@BeforeTest
+	public void propFileLoader() {
+		propertFileLoader("C:\\Eclipse Projects\\Personal Workspace\\Let_Code\\Config.properties");
+	}
 
-	public void browserLogin() {
+	@Test
+	public void chromeLaunch() {
 
-		browserLaunch("chrome");
+		browserLaunch(getPropertValue("browser"));
 		maximizeScreen();
 	}
 
+	@Test(dependsOnMethods = { "chromeLaunch" })
 	public void homePageLogin() {
-		openUrl(homepage_Url);
+		openUrl(getPropertValue("baseUrl"));
+		WebElement inputEditCta = driver.findElement(By.xpath("//a[contains(text(),' Edit ')]"));
+		clickButton(inputEditCta);
+		boolean pageTitle = validatePageTitle("Edit Fields | LetCode with Koushik");
+		if (pageTitle == true) {
+			System.err.println("Page Title matched - " + pageTitle);
+		} else {
+			System.err.println("Page Title Not matched - " + pageTitle);
+			closeWindow();
+		}
 	}
 
-	@Ignore
 	@Test
-	public static void inputBoxes() {
-
-		redirectToUrl("https://letcode.in/edit");
-		pageTitleValidator("Interact with Input fields");
-
-	}
-
-	@Ignore
-	@Test
-	public static void method2() {
-
-		redirectToUrl("https:www.google.com");
-		System.out.println("Method 2");
+	public static void inputBoxesValidations() {
 
 	}
 

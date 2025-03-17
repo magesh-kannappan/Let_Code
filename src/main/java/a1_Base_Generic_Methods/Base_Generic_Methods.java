@@ -36,6 +36,7 @@ public class Base_Generic_Methods {
 	public static void pageTitleValidator(String actualPageTitle) {
 
 		String currentPageTitle = driver.getTitle();
+		
 		if (actualPageTitle.equals(currentPageTitle)) {
 			System.out.println("Correct Page Title");
 		} else {
