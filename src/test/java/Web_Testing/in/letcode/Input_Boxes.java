@@ -11,8 +11,11 @@ public class Input_Boxes extends Base_Practice {
 
 	@BeforeTest
 	public void propFileLoader() {
-		propertFileLoader("C:\\Eclipse Projects\\Personal Workspace\\Let_Code\\Config.properties");
+		propertFileLoader("./Eclipse Projects/Personal Workspace/Let_Code/Config.properties");
+//		propertFileLoader("C:\\Eclipse Projects\\Personal Workspace\\Let_Code\\Config.properties");
 	}
+	
+//	
 
 	@Test
 	public void chromeLaunch() {
@@ -23,6 +26,7 @@ public class Input_Boxes extends Base_Practice {
 
 	@Test(dependsOnMethods = { "chromeLaunch" })
 	public void homePageLogin() {
+
 		openUrl(getPropertValue("baseUrl"));
 		WebElement inputEditCta = driver.findElement(By.xpath("//a[contains(text(),' Edit ')]"));
 		clickButton(inputEditCta);
